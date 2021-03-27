@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -35,7 +35,7 @@
       <div class="promo__wrapper">
         <h2 class="promo__title">Функциональное питание для котов</h2>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
-        <button class="promo__button button">подобрать программу</button>
+        <a class="promo__button button" href="form.html">подобрать программу</a>
       </div>
     </section>
     <section class="programs">
@@ -60,7 +60,7 @@
     <section class="work">
       <div class="work__wrapper">
         <h2 class="work__title">Как это работает</h2>
-        <ul class="work__list">
+        <ol class="work__list">
           <li class="work__item work__item--useful">
             <p class="work__description">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
@@ -73,7 +73,7 @@
           <li class="work__item work__item--result">
             <p class="work__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
           </li>
-        </ul>
+        </ol>
       </div>
     </section>
     <section class="example">
@@ -97,29 +97,25 @@
           <b class="example__food-costs">Затраты на питание: <span class="example__cost">15 000 руб.</span></b>
         </div>
         <div class="example__slider slider">
-          <div class="slider__item  slider__item--before">
-            <img class="slider__img" src="img/before-mobile.png" width="311" height="232" alt="Жирный котик">
-          </div>
-          <div class="slider__item  slider__item--after">
-            <img class="slider__img" src="img/after-mobile.png" width="251" height="240" alt="Худой котик">
-          </div>
           <div class="slider__wrapper">
-            <b class="slider__label">Было</b>
-            <div class="slider__toggles">
-              <div class="slider__toggle-scale">
-                <div class="slider__toggle-bar"></div>
-              </div>
-              <div class="slider__toggle" tabindex="0" style="left: 50%"></div>
+            <div class="slider__item  slider__item--before">
+              <img class="slider__img" src="img/before-mobile.png" width="311" height="232" alt="Бодипозитивный котик">
             </div>
-            <b class="slider__label">Стало</b>
+            <div class="slider__item  slider__item--after">
+              <img class="slider__img" src="img/after-mobile.png" width="251" height="240" alt="Худой котик">
+            </div>
+          </div>
+          <div class="slider__range">
+            <label class="slider__span" for="slider-range">Было</label>
+            <input class="slider__input-range" id="slider-range" type="range" min="0" max="100" value="50" />
+            <label class="slider__span" for="slider-range">Стало</label>
           </div>
         </div>
       </div>
     </section>
     <section class="contacts">
       <div class="contacts__wrapper">
-        <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
+        <h2 class="contacts__text">Приглашаем к сотрудничеству дилеров!</h2>
         <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></address>
       </div>
       <div class="contacts__map map">
