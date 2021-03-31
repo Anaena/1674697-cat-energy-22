@@ -1,0 +1,97 @@
+.work {
+  min-height: 445px;
+}
+
+.work__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.work__title {
+  margin: 27px 0 28px 0;
+  font-size: 34px;
+  line-height: 40px;
+  color: @basic_black;
+}
+
+.work__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.work__item {
+  position: relative;
+  padding-left: 80px;
+
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+
+.work__item--useful::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 10px;
+  left: 0;
+  background-color: @basic_green;
+  background-image: url("../../img/index/icon/icon_leaf.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.work__item--water::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 10px;
+  left: 0;
+  background-color: @basic_green;
+  background-image: url("../../img/index/icon/icon_tub.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.work__item--nutritious::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 10px;
+  left: 0;
+  background-color: @basic_green;
+  background-image: url("../../img/index/icon/icon_eat.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.work__item--result::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 10px;
+  left: 0;
+  background-color: @basic_green;
+  background-image: url("../../img/index/icon/icon_alarm.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.work__description {
+  margin: 14px 0 8px;
+  padding: 0;
+  font-family: @Arial;
+  font-size: 14px;
+  line-height: 18px;
+}
