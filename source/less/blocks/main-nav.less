@@ -22,19 +22,19 @@
   cursor: pointer;
   border: none;
   background: 0 0;
+}
 
-  & > span {
-    position: relative;
-    display: inline-block;
-    width: 24px;
-    height: 1.5px;
-    vertical-align: bottom;
-    margin: 8px 0;
-    background: @basic_black;
-  }
+.main-nav__open {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 1.5px;
+  vertical-align: bottom;
+  margin: 8px 0;
+  background: @basic_black;
 
-  & > span::before,
-  & > span::after {
+  &::before,
+  &::after {
     content: "";
     position: absolute;
     left: 0;
@@ -43,11 +43,11 @@
     background: @basic_black;
   }
 
-  & > span::before {
+  &::before {
     top: 8px;
   }
 
-  & > span::after {
+  &::after {
     top: -8px;
   }
 }
