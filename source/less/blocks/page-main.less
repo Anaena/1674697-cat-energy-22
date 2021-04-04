@@ -1,6 +1,4 @@
 .page-main {
-  border-top: 1px solid @special_gainsboro;
-
   &--wrapper {
     width: 320px;
     margin: 0 auto;
@@ -12,10 +10,9 @@
 }
 
 .page-main__title {
-  margin: 25px 19px 27px;
+  margin: 27px 19px;
   padding: 0;
-  font-family: @Oswald;
-  font-weight: 400;
+  .font(@Oswald; normal; 400);
   font-size: 36px;
   line-height: 36px;
   color: @basic_black;
