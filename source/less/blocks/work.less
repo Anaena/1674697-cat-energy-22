@@ -37,7 +37,7 @@
     margin-bottom: 5px;
   }
 
-  &--useful::before {
+  &::before {
     content: "";
     position: absolute;
     width: 60px;
@@ -45,48 +45,24 @@
     top: 10px;
     left: 0;
     background-color: @basic_green;
-    background-image: url("../../img/index/icon/icon_leaf.svg");
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  &--useful::before {
+    background-image: url("../../img/index/icon/icon_leaf.svg");
   }
 
   &--water::before {
-    content: "";
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    top: 10px;
-    left: 0;
-    background-color: @basic_green;
     background-image: url("../../img/index/icon/icon_tub.svg");
-    background-position: center;
-    background-repeat: no-repeat;
   }
 
   &--nutritious::before {
-    content: "";
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    top: 10px;
-    left: 0;
-    background-color: @basic_green;
     background-image: url("../../img/index/icon/icon_eat.svg");
-    background-position: center;
-    background-repeat: no-repeat;
   }
 
   &--result::before {
-    content: "";
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    top: 10px;
-    left: 0;
-    background-color: @basic_green;
     background-image: url("../../img/index/icon/icon_alarm.svg");
-    background-position: center;
-    background-repeat: no-repeat;
   }
 }
 

@@ -26,8 +26,8 @@
 @Arial: Arial, sans-serif;
 @Oswald: "Oswald", Arial, sans-serif;
 
-.arial(@Arial; @style; @weight) {
-  font-family: @Arial;
-  font-style: normal;
-  font-weight: 400;
+.arial(@font; @style: normal; @weight: 400) {
+  font-family: @font;
+  font-style: @style;
+  font-weight: @weight;
 }
