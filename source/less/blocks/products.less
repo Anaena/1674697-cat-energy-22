@@ -1,0 +1,26 @@
+.products__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 14px;
+}
+
+.products__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.products__item {
+  padding-bottom: 25px;
+  padding-top: 21px;
+  border-top: 1px solid @special_card-border;
+
+  &:last-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid @special_card-border;
+  }
+}

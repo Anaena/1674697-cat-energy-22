@@ -1,0 +1,99 @@
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 162px;
+}
+
+.card__link {
+  .font(@Oswald; normal; 400);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: @special_nero;
+}
+
+.card__block-img {
+  width: 26.5%;
+  height: 112px;
+  margin-left: 20px;
+  padding: 11px 28px 0;
+  text-align: center;
+}
+
+.card__img {
+  object-fit: contain;
+
+  &--center {
+    padding-top: 14px;
+  }
+}
+
+.card__block-info {
+  width: 43.5%;
+  margin-right: 20px;
+}
+
+.card__title {
+  margin: 0;
+  padding: 0;
+  width: 55%;
+  .font(@Oswald; normal; 400);
+  font-size: 16px;
+  line-height: 20px;
+
+  &--more {
+    width: 100%;
+    margin-top: 18px;
+  }
+}
+
+.card__description {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  .font(@Arial; normal; 400);
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.card__feature,
+.card__definition {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card__feature {
+  width: 50%;
+}
+
+.card__definition {
+  width: 50%;
+  margin-left: 0;
+  text-align: end;
+}
+
+.card__order {
+  padding: 9px 108px;
+  color: @basic_white;
+  align-self: flex-end;
+}
+
+.card__icon {
+  transform: translateY(4px);
+}
+
+.card__more {
+  margin: 0 0 11px;
+  .font(@Arial; normal; 400);
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.card__button {
+  width: 87%;
+  padding: 10px 44px;
+  background: @basic_grey;
+}

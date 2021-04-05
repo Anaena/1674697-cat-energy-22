@@ -1,0 +1,52 @@
+.small-card {
+  padding: 10px 0 18px;
+  border-top: 1px solid @special_light-grey;
+
+  &:last-of-type {
+    border-bottom: 1px solid @special_light-grey;
+  }
+}
+
+.small-card__title {
+  margin: 2px 0 14px;
+  padding: 0;
+  .font(@Oswald; normal; 400);
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: @special_nero;
+}
+
+.small-card__description {
+  margin: 0 0 14px 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.small-card__feature,
+.small-card__cost {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  .font(@Arial; normal; 400);
+  font-size: 14px;
+  line-height: 14px;
+  color: @special_dark-grey;
+}
+
+.small-card__feature {
+  width: 50%;
+}
+
+.small-card__cost {
+  width: 50%;
+  text-align: end;
+}
+
+.small-card__order {
+  width: 100%;
+  padding: 10px 44px;
+  color: @basic_white;
+}
