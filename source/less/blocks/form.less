@@ -1,0 +1,202 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__fieldset {
+  min-width: 280px;
+  margin: 0;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+
+  &:nth-of-type(1),
+  &:nth-of-type(2) {
+    border-bottom: 1px solid @special_gainsboro;
+  }
+
+  &--padding {
+    padding: 29px 20px 11px;
+  }
+
+  &--row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.form__label {
+  display: block;
+  line-height: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  user-select: none;
+
+  &--radio {
+    margin: 0 0 15px 45px;
+    position: relative;
+  }
+
+  &--radio:not(:first-of-type) {
+    margin-top: 10px;
+  }
+
+  &--radio:last-of-type {
+    margin-bottom: 13px;
+  }
+
+  &--personal {
+    padding-bottom: 15px;
+  }
+
+  &--checkbox {
+    margin: 0 0 25px 45px;
+    position: relative;
+  }
+
+  &--checkbox:first-of-type {
+    margin-top: 2px;
+  }
+}
+
+.form__item {
+  margin: 0 0 13px 10px;
+  padding: 13px 0 13px 14px;
+  .font(@Oswald; normal; 400);
+  font-size: 16px;
+  line-height: 18px;
+  align-items: center;
+  text-transform: uppercase;
+  border: 1px solid @special_border;
+  box-sizing: border-box;
+  color: @special_dark-grey;
+
+  &--name {
+    width: 81.5%;
+  }
+
+  &--weight {
+    width: 72.5%;
+    margin-left: 13px;
+  }
+
+  &--age {
+    width: 61.5%;
+  }
+
+  &::placeholder {
+    color: @special_dark-grey;
+  }
+
+  &--personal {
+    margin: 0 0 12px 7px;
+    padding: 13px 0 14px 14px;
+  }
+
+  &--email {
+    width: 78.5%;
+  }
+
+  &--phone {
+    width: 72.5%;
+  }
+
+  &--comment {
+    width: 100%;
+    margin: 0;
+    padding: 9px 5px 16px 14px;
+  }
+}
+
+.form__input--radio {
+  & + .form__label--radio::before {
+    content: "";
+    position: absolute;
+    left: -47px;
+    top: -8px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid @special_light-grey;
+    border-radius: 50%;
+  }
+
+  &:checked + .form__label--radio::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -37px;
+    width: 13px;
+    height: 13px;
+    background-color: @basic_green;
+    border-radius: 50%;
+  }
+}
+
+.form__item--checkbox {
+  & + .form__label--checkbox::before {
+    content: "";
+    position: absolute;
+    left: -45px;
+    top: -5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid @special_light-grey;
+    box-sizing: border-box;
+  }
+
+  &:checked + .form__label--checkbox::after {
+    content: "";
+    position: absolute;
+    left: -39px;
+    top: 3px;
+    width: 18px;
+    height: 14px;
+    background-image: url("../../img/form/checkbox_active.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.form__subtitle {
+  padding: 26px 0 35px;
+  .font(@Oswald; normal; 400);
+  font-size: 24px;
+  line-height: 26px;
+  color: @basic_black;
+
+  &--padding {
+    padding-top: 13px;
+  }
+
+  // &::after {
+  //   content: "";
+  //   display: inline-block;
+  //   vertical-align: middle;
+  //   position: absolute;
+  //   box-sizing: border-box;
+  //   width: 100%;
+  //   height: 2px;
+  //   right: 20px;
+  //   background: @basic_green;
+  //   border: solid @basic_white;
+  //   border-width: 0 10px;
+  // }
+}
+
+.form__button {
+  width: 87%;
+  margin: 15px auto 20px;
+  color: @basic_white;
+}
+
+.form__required-fields {
+  margin-bottom: 31px;
+  align-self: center;
+  .font(@Arial; normal; 400);
+  font-size: 14px;
+  line-height: 16px;
+  color: @basic_black;
+}
