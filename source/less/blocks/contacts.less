@@ -9,7 +9,8 @@
 }
 
 .contacts__wrapper {
-  width: 280px;
+  width: 87%;
+  min-width: 280px;
   margin: 0 auto;
   padding: 20px 20px;
   display: grid;
@@ -19,7 +20,7 @@
     display: flex;
     justify-content: space-between;
     width: 92%;
-    max-width: 1326px;
+    max-width: 1220px;
     margin-bottom: 30px;
     border-bottom: none;
   }
@@ -35,6 +36,7 @@
     top: 24%;
     left: 8%;
     background: @basic_white;
+    z-index: 5;
   }
 }
 
@@ -104,14 +106,17 @@
 }
 
 .contacts__map {
-  width: 320px;
+  width: 100%;
+  min-width: 320px;
+  height: 362px;
   margin: 0 auto;
   padding: 0;
   background: @special_smoke-grey;
+  overflow: hidden;
 
   @media (min-width: @tablet-width) {
-    width: 100%;
-    max-width: 1326px;
+    max-width: 1220px;
+    height: 400px;
   }
 
   @media (min-width: @desktop-width) {

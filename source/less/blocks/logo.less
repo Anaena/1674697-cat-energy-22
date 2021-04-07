@@ -1,6 +1,11 @@
 .logo {
   display: flex;
   align-items: center;
+  justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-start;
+  }
 }
 
 .logo__image-icon {

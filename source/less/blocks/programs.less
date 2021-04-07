@@ -14,7 +14,7 @@
   @media (min-width: @tablet-width) {
     padding: 0 30px;
     width: 92%;
-    max-width: 1326px;
+    max-width: 1220px;
     border-bottom: none;
   }
 
@@ -55,10 +55,18 @@
     width: 39%;
     padding: 54px 47px;
     align-items: stretch;
+    margin-bottom: 30px;
+  }
+
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 30px;
+    }
   }
 
   &--slim {
-    margin-bottom: 20px;
     background-color: @basic_grey;
     background-image: url("../../img/index/cat_slim.svg");
     background-position: 10% 10%;
@@ -70,7 +78,6 @@
     }
 
     @media (min-width: @desktop-width) {
-      margin-bottom: 0;
       background-position: 11% 15%;
       background-size: 100px 106px;
     }
