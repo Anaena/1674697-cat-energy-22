@@ -1,5 +1,4 @@
 .page-header {
-  min-height: 66px;
   max-height: 264px;
 }
 
@@ -13,8 +12,33 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid @special_gainsboro;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 92%;
+    max-width: 1326px;
+    border-bottom: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }
 
 .page-header__logo {
-  padding: 13px 20px 11px;
+  height: 65px;
+  padding: 0 0 0 20px;
+
+  @media (min-width: @tablet-width) {
+    height: 100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 160px;
+  }
+}
+
+.page-header__logo .logo__image-text {
+  width: 101px;
 }
