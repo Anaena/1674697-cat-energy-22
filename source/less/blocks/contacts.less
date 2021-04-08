@@ -1,19 +1,46 @@
+.contacts {
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+}
+
 .contacts--theme {
   background: @special_smoke-grey;
 }
 
 .contacts__wrapper {
-  width: 280px;
+  width: calc(100% - 40px);
+  min-width: 280px;
   margin: 0 auto;
   padding: 20px 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 60px);
+    max-width: 1220px;
+    margin-bottom: 30px;
+    border-bottom: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 510px;
+    height: 161px;
+    margin: 0;
+    padding: 20px 30px;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 24%;
+    left: 8%;
+    background: @basic_white;
+    z-index: 5;
+  }
 }
 
 .contacts__title {
-  width: 50%;
   margin: 9px 0 7px;
   padding: 0;
   .font(@Oswald; normal; 400);
@@ -21,13 +48,17 @@
   line-height: 20px;
   text-transform: uppercase;
   color: @special_black;
-}
 
-.contacts__address {
-  margin: 0;
-  margin-top: 4px;
-  padding: 0;
-  width: 50%;
+  @media (min-width: @tablet-width) {
+    width: 33%;
+    margin: 48px 10px 10px 40px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 15px 10px 10px 48px;
+  }
 }
 
 .contacts__address,
@@ -35,11 +66,60 @@
   .font(@Arial; normal; 400);
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+  }
+}
+
+.contacts__address {
+  margin: 0;
+  margin-top: 9px;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 27%;
+    margin: 44px 46px 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 50%;
+    margin: 14px 20px 9px 71px;
+    align-items: flex-start;
+  }
+}
+
+.contacts__city {
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .contacts__map {
-  width: 320px;
+  width: 100%;
+  min-width: 320px;
+  height: 362px;
   margin: 0 auto;
   padding: 0;
   background: @special_smoke-grey;
+  overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    max-width: 1220px;
+    height: 400px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    max-width: 1440px;
+  }
 }
