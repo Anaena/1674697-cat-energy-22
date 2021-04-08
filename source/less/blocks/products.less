@@ -3,12 +3,29 @@
   flex-direction: column;
   justify-content: flex-start;
   padding-top: 14px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: calc(100% - 60px);
+    max-width: 1220px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }
 
 .products__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .products__item {
@@ -16,11 +33,62 @@
   padding-top: 21px;
   border-top: 1px solid @special_card-border;
 
-  &:last-of-type {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid @special_card-border;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 140px;
+    padding-top: 0;
+    border-top: none;
+    background-color: @basic_grey;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 0;
+    margin-bottom: 144px;
+  }
+}
+
+.products__item:first-of-type,
+.products__item:nth-child(2) {
+  @media (min-width: @tablet-width) {
+    margin-top: 109px;
+  }
+}
+
+.products__item:nth-last-of-type(2),
+.products__item:last-of-type {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.products__item:nth-child(n):nth-child(-n+4) {
+  @media (min-width: @desktop-width) {
+    margin-top: 127px;
+  }
+}
+
+.products__item:nth-last-child(-n+4) {
+  @media (min-width: @desktop-width) {
+    margin-bottom: 59px;
+  }
+}
+
+.products__item--more {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url("../../img/catalog/plus.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 14%;
+  border-bottom: 1px solid @special_card-border;
+
+  @media (min-width: @tablet-width) {
+    background-size: 60px;
+    background-color: transparent;
+    border: 2px solid @basic_grey;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 427px;
   }
 }
