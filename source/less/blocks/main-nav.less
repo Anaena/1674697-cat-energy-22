@@ -4,12 +4,13 @@
   width: 100%;
 
   @media (min-width: @tablet-width) {
-    width: 62%;
+    width: calc(100% - 269px);
+    max-width: 1220px;
     display: flex;
   }
 
   @media (min-width: @desktop-width) {
-    width: 39.3%;
+    width: calc(100% - 742px);
   }
 }
 
