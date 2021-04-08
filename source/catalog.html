@@ -19,16 +19,16 @@
         </picture>
         <img class="logo__image-text" src="img/logo.svg" width="101" height="18" alt="Cat energy">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"><span class="main-nav__open"></span></button>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"><span class="main-nav__span"></span></button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--active">
             <a class="main-nav__link">Каталог продукции</a>
           </li>
-          <li class="main-nav__item main-nav__item--active">
+          <li class="main-nav__item">
             <a class="main-nav__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
@@ -36,7 +36,7 @@
     </div>
   </header>
   <main class="page-main page-main--wrapper">
-    <h1 class="page-main__title">Каталог продукции</h1>
+    <h1 class="page-main__title page-main__title--catalog">Каталог продукции</h1>
     <section class="products">
       <div class="products__wrapper">
         <h2 class="visually-hidden">Основные товары</h2>
@@ -195,7 +195,7 @@
             </div>
             <button class="card__order button">заказать</button>
           </li>
-          <li class="products__item card">
+          <li class="products__item products__item--more card">
             <svg class="card__icon" width="30" height="30" viewBox="0 0 30 30" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <line x1="15" x2="15" y2="30" stroke="#D3D3D3" stroke-width="2" />
@@ -324,6 +324,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
