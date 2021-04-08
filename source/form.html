@@ -18,9 +18,9 @@
         </picture>
         <img class="logo__image-text" src="img/logo.svg" width="101" height="18" alt="Cat energy">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню"><span
-            class="main-nav__open"></span></button>
+            class="main-nav__span"></span></button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
@@ -41,7 +41,7 @@
       <h2 class="visually-hidden">Анкета</h2>
       <p class="program-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="program-form__form form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form__fieldset form__fieldset--padding form__fieldset--row">
+        <fieldset class="form__fieldset form__fieldset--pet form__fieldset--row">
           <legend class="visually-hidden">Данные животного</legend>
           <label class="form__label form__label--personal" for="item--name">ИМЯ:*</label>
             <input class="form__item form__item--personal form__item--name" id="item--name" type="text" name="pet-name" placeholder="барсик" required>
@@ -50,7 +50,7 @@
           <label class="form__label form__label--personal" for="item--age">Возраст (лет):</label>
             <input class="form__item form__item--personal form__item--age" id="item--age" type="number" name="age" placeholder="7">
         </fieldset>
-        <fieldset class="form__fieldset form__fieldset--radio form__fieldset--padding">
+        <fieldset class="form__fieldset form__fieldset--radio">
           <legend class="visually-hidden">Цель программы</legend>
           <input class="visually-hidden form__input--radio" type="radio" name="program" value="slimming" id="slimming"
             checked>
@@ -60,7 +60,7 @@
           <input class="visually-hidden form__input--radio" type="radio" name="program" value="advice" id="advice">
           <label class="form__label form__label--radio" for="advice">Не знаю (Нужен ваш совет)</label>
         </fieldset>
-        <fieldset class="form__fieldset form__fieldset--row">
+        <fieldset class="form__fieldset form__fieldset--personal form__fieldset--row">
           <legend class="form__subtitle">Контактные данные (владельца кота)</legend>
           <label class="form__label form__label--personal" for="item--email">E-mail:*</label>
             <input class="form__item form__item--personal form__item--email" id="item--email" type="email" name="email" placeholder="kuklachev@gmail.com"
@@ -69,13 +69,13 @@
             <input class="form__item form__item--personal form__item--phone" id="item--phone" type="tel" name="phone" placeholder="8 (960) 900-60-90"
               required>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--comment">
           <legend class="form__subtitle form__subtitle--padding">Комментарий</legend>
-          <label class="form__label">
+          <label class="form__label form__label--textarea">
             <textarea class="form__item form__item--comment" rows="7"
               name="review">Расскажите обо всех повАдках кота</textarea></label>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--checkbox">
           <legend class="form__subtitle">Дополнительно</legend>
           <input class="visually-hidden form__item form__item--checkbox" type="checkbox" name="sweetener" id="sweetener"
             checked>
@@ -94,13 +94,13 @@
     <section class="contacts contacts--theme">
       <div class="contacts__wrapper">
         <h2 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span
-            class="contacts__city">Санкт-Петербург</span>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8
+          <span class="contacts__city">Санкт-Петербург</span>
         </address>
       </div>
       <div class="contacts__map map">
-        <iframe class="map__iframe" width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858716006118!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1616755633399!5m2!1sru!2sru"></iframe>
+        <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/-/CCUUj8CHDC" width="560" height="400"
+          frameborder="1" allowfullscreen="true"></iframe>
       </div>
     </section>
   </main>
@@ -148,6 +148,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

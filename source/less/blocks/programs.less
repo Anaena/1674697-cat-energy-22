@@ -57,69 +57,69 @@
     align-items: stretch;
     margin-bottom: 30px;
   }
+}
 
-  &:not(:last-of-type) {
-    margin-bottom: 20px;
+.programs__item:not(:last-of-type) {
+  margin-bottom: 20px;
 
-    @media (min-width: @tablet-width) {
-      margin-bottom: 30px;
-    }
+  @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.programs__item--slim {
+  background-color: @basic_grey;
+  background-image: url("../../img/index/cat_slim.svg");
+  background-position: 10% 10%;
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    background-position: 87% 50%;
+    background-size: 200px 211px;
   }
 
-  &--slim {
-    background-color: @basic_grey;
-    background-image: url("../../img/index/cat_slim.svg");
-    background-position: 10% 10%;
-    background-repeat: no-repeat;
+  @media (min-width: @desktop-width) {
+    background-position: 11% 15%;
+    background-size: 100px 106px;
+  }
+}
 
-    @media (min-width: @tablet-width) {
-      background-position: 87% 50%;
-      background-size: 200px 211px;
-    }
+.programs__item--pro {
+  background-color: @basic_grey;
+  background-image: url("../../img/index/cat_pro.svg");
+  background-position: 6% 11%;
+  background-repeat: no-repeat;
 
-    @media (min-width: @desktop-width) {
-      background-position: 11% 15%;
-      background-size: 100px 106px;
-    }
+  @media (min-width: @tablet-width) {
+    background-position: 92.5% 52%;
+    background-size: 268px 200px;
   }
 
-  &--pro {
-    background-color: @basic_grey;
-    background-image: url("../../img/index/cat_pro.svg");
-    background-position: 6% 11%;
-    background-repeat: no-repeat;
+  @media (min-width: @desktop-width) {
+    background-position: 8% 17%;
+    background-size: 134px 100px;
+  }
+}
 
-    @media (min-width: @tablet-width) {
-      background-position: 92.5% 52%;
-      background-size: 268px 200px;
-    }
+.programs__item--pro .programs__title {
+  margin-left: 38px;
 
-    @media (min-width: @desktop-width) {
-      background-position: 8% 17%;
-      background-size: 134px 100px;
-    }
+  @media (min-width: @tablet-width) {
+    margin-left: 5px;
   }
 
-  &--pro .programs__title {
-    margin-left: 38px;
+  @media (min-width: @desktop-width) {
+    margin-left: 64px;
+  }
+}
 
-    @media (min-width: @tablet-width) {
-      margin-left: 5px;
-    }
-
-    @media (min-width: @desktop-width) {
-      margin-left: 64px;
-    }
+.programs__item--pro .programs__description {
+  @media (min-width: @tablet-width) {
+    width: 55.5%;
   }
 
-  &--pro .programs__description {
-    @media (min-width: @tablet-width) {
-      width: 55.5%;
-    }
-
-    @media (min-width: @desktop-width) {
-      width: 100%;
-    }
+  @media (min-width: @desktop-width) {
+    width: 100%;
   }
 }
 
