@@ -1,3 +1,25 @@
+.program-form--wrapper {
+  width: calc(100% - 40px);
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    max-width: 1220px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+}
+
+.program-form__form {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 53px;
+  }
+}
+
 .program-form__description {
   margin: 10px 20px;
   padding: 0;
@@ -7,4 +29,16 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @basic_black;
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+    margin: 13px 70px 38px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 32%;
+    margin: 31px 0 38px;
+  }
 }
