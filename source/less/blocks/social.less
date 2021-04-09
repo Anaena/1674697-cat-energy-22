@@ -7,22 +7,59 @@
   @media (min-width: @tablet-width) {
     width: 60%;
     justify-content: space-between;
-    padding: 0 0 5px 0;
   }
 
   @media (min-width: @desktop-width) {
-    width: 50%;
-    justify-content: flex-end;
+    width: 45%;
+    justify-content: flex-start;
   }
 }
 
 .social__item {
+  @media (min-width: @tablet-width) {
+    margin-right: 25px;
+  }
+
   @media (min-width: @desktop-width) {
-    margin-left: 23px;
+    margin-right: 29px;
   }
 }
 
+.social__item:last-of-type {
+  margin-right: 0;
+}
+
+.social__icon {
+  fill: @special_grey;
+}
+
+.social__path--background {
+  stroke: @special_grey;
+  fill: none;
+}
+
+.social__item:hover .social__icon,
+.social__item:focus .social__icon,
+.social__icon:hover,
+.social__icon:focus {
+  fill: @basic_green;
+}
+
+.social__item:hover .social__path--background,
+.social__item:focus .social__path--background,
+.social__path--background:hover,
+.social__path--background:focus {
+  stroke: @basic_green;
+}
+
+.social__item:active {
+  opacity: 0.3;
+}
+
 .social__link--vkontakte .social__icon {
+  width: 23px;
+  height: 16px;
+
   @media (min-width: @tablet-width) {
     width: 30px;
     height: 22px;
@@ -30,6 +67,9 @@
 }
 
 .social__link--instagram .social__icon {
+  width: 16px;
+  height: 16px;
+
   @media (min-width: @tablet-width) {
     width: 23px;
     height: 23px;
@@ -37,6 +77,9 @@
 }
 
 .social__link--facebook .social__icon {
+  width: 22px;
+  height: 22px;
+
   @media (min-width: @tablet-width) {
     width: 28px;
     height: 33px;

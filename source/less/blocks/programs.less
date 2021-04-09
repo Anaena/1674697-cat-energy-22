@@ -52,10 +52,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 39%;
-    padding: 54px 47px;
-    align-items: stretch;
+    width: calc((100% - 280px) / 2);
+    padding: 54px 50px;
     margin-bottom: 30px;
+    justify-content: space-between;
   }
 }
 
@@ -74,7 +74,7 @@
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
-    background-position: 87% 50%;
+    background-position: 88% 50%;
     background-size: 200px 211px;
   }
 
@@ -91,12 +91,12 @@
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
-    background-position: 92.5% 52%;
+    background-position: 93% 52%;
     background-size: 268px 200px;
   }
 
   @media (min-width: @desktop-width) {
-    background-position: 8% 17%;
+    background-position: 7% 17%;
     background-size: 134px 100px;
   }
 }
@@ -115,7 +115,7 @@
 
 .programs__item--pro .programs__description {
   @media (min-width: @tablet-width) {
-    width: 55.5%;
+    width: 56%;
   }
 
   @media (min-width: @desktop-width) {
@@ -134,14 +134,14 @@
 
   @media (min-width: @tablet-width) {
     margin-left: 5px;
-    margin-bottom: 26px;
+    margin-bottom: 25px;
     font-size: 36px;
     line-height: 36px;
     text-align: left;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 23px 0 25px 25px;
+    margin: 23px 0 25px 15px;
     align-self: center;
   }
 }
@@ -166,11 +166,15 @@
   @media (min-width: @desktop-width) {
     width: 100%;
     margin-left: 0;
+    margin-top: 47px;
+    padding-bottom: 0;
+    justify-self: center;
   }
 }
 
 .programs__link {
   padding: 4px 0;
+  position: relative;
   line-height: 16px;
   text-align: center;
   text-decoration: none;
@@ -188,4 +192,51 @@
     padding: 12px 0;
     text-align: left;
   }
+}
+
+.programs__link::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 10px;
+  top: 9px;
+  right: -48px;
+  background-image: url("../../img/index/icon/icon_arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @media (min-width: @tablet-width) {
+    top: 21px;
+    right: -55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: -61px;
+  }
+}
+
+.programs__link:hover::after,
+.programs__link:focus::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 10px;
+  top: 9px;
+  right: -48px;
+  background-image: url("../../img/index/icon/icon_long-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @media (min-width: @tablet-width) {
+    top: 21px;
+    right: -55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: -61px;
+  }
+}
+
+.programs__link:active {
+  opacity: 0.3;
 }

@@ -5,12 +5,36 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  background: @basic_green;
+  background-color: @basic_green;
+  color: @basic_white;
   border: none;
+
+  &:hover,
+  &:focus {
+    background-color: @basic_lime-green;
+  }
+
+  &:active {
+    color: fade(@basic_white, 30%);
+  }
 
   @media (min-width: @tablet-width) {
     padding: 14px 26px;
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+.button--monochrome {
+  background-color: @basic_grey;
+  color: @special_dark-grey;
+
+  &:hover,
+  &:focus {
+    background-color: @special_card-border;
+  }
+
+  &:active {
+    color: fade(@special_dark-grey, 30%);
   }
 }

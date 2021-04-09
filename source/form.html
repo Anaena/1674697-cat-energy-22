@@ -60,32 +60,38 @@
           <input class="visually-hidden form__input--radio" type="radio" name="program" value="advice" id="advice">
           <label class="form__label form__label--radio" for="advice">Не знаю (Нужен ваш совет)</label>
         </fieldset>
-        <fieldset class="form__fieldset form__fieldset--personal form__fieldset--row">
-          <legend class="form__subtitle">Контактные данные (владельца кота)</legend>
-          <label class="form__label form__label--personal" for="item--email">E-mail:*</label>
-            <input class="form__item form__item--personal form__item--email" id="item--email" type="email" name="email" placeholder="kuklachev@gmail.com"
-              required>
-          <label class="form__label form__label--personal" for="item--phone">Телефон:*</label>
-            <input class="form__item form__item--personal form__item--phone" id="item--phone" type="tel" name="phone" placeholder="8 (960) 900-60-90"
-              required>
+        <fieldset class="form__fieldset">
+          <legend class="form__subtitle form__subtitle--personal">Контактные данные<br class="form__br"> (владельца кота)</legend>
+          <div class="form__wrapper form__wrapper--personal form__wrapper--row">
+            <label class="form__label form__label--personal" for="item--email">E-mail:*</label>
+            <input class="form__item form__item--personal form__item--email" id="item--email" type="email" name="email"
+              placeholder="kuklachev@gmail.com" required>
+            <label class="form__label form__label--personal" for="item--phone">Телефон:*</label>
+            <input class="form__item form__item--personal form__item--phone" id="item--phone" type="tel" name="phone"
+              placeholder="8 (960) 900-60-90" required>
+          </div>
         </fieldset>
-        <fieldset class="form__fieldset form__fieldset--comment">
+        <fieldset class="form__fieldset">
           <legend class="form__subtitle form__subtitle--padding">Комментарий</legend>
-          <label class="form__label form__label--textarea">
-            <textarea class="form__item form__item--comment" rows="7"
-              name="review">Расскажите обо всех повАдках кота</textarea></label>
+          <div class="form__wrapper form__wrapper--comment">
+            <label class="form__label form__label--textarea">
+              <textarea class="form__item form__item--comment" rows="7"
+                name="review">Расскажите обо всех повАдках кота</textarea></label>
+          </div>
         </fieldset>
-        <fieldset class="form__fieldset form__fieldset--checkbox">
+        <fieldset class="form__fieldset">
           <legend class="form__subtitle">Дополнительно</legend>
-          <input class="visually-hidden form__item form__item--checkbox" type="checkbox" name="sweetener" id="sweetener"
-            checked>
-          <label class="form__label form__label--checkbox" for="sweetener">сахарозаменитель</label>
-          <input class="visually-hidden form__item form__item--checkbox" type="checkbox" name="water" id="water">
-          <label class="form__label form__label--checkbox" for="water">питьевая вода</label>
-          <input class="visually-hidden form__item form__item--checkbox" type="checkbox" name="milk" id="milk">
-          <label class="form__label form__label--checkbox" for="milk">молоко</label>
-          <input class="visually-hidden form__item form__item--checkbox" type="checkbox" name="vitamins" id="vitamins">
-          <label class="form__label form__label--checkbox" for="vitamins">витамины</label>
+          <div class="form__wrapper form__wrapper--checkbox">
+            <input class="visually-hidden form__item form__item--checkbox" type="checkbox" name="sweetener" id="sweetener"
+              checked>
+            <label class="form__label form__label--checkbox" for="sweetener">сахарозаменитель</label>
+            <input class="visually-hidden form__item form__item--checkbox" type="checkbox" name="water" id="water">
+            <label class="form__label form__label--checkbox" for="water">питьевая вода</label>
+            <input class="visually-hidden form__item form__item--checkbox" type="checkbox" name="milk" id="milk">
+            <label class="form__label form__label--checkbox" for="milk">молоко</label>
+            <input class="visually-hidden form__item form__item--checkbox" type="checkbox" name="vitamins" id="vitamins">
+            <label class="form__label form__label--checkbox" for="vitamins">витамины</label>
+          </div>
         </fieldset>
         <button class="form__button button" type="submit">отправить заявку</button>
         <small class="form__required-fields">* — Обязательные поля</small>
@@ -99,8 +105,7 @@
         </address>
       </div>
       <div class="contacts__map map">
-        <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/-/CCUUj8CHDC" width="560" height="400"
-          frameborder="1" allowfullscreen="true"></iframe>
+        <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/-/CCUUj8CHDC" width="560" height="400" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </section>
   </main>

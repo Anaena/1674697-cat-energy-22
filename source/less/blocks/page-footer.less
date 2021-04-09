@@ -4,10 +4,14 @@
   &--theme {
     background: @special_smoke-grey;
   }
+
+  @media (min-width: @tablet-width) {
+    min-height: 150px;
+  }
 }
 
 .page-footer__wrapper {
-  width: calc(100% - 40px);
+  width: calc(100% - 80px);
   min-width: 280px;
   margin: 0 auto;
   padding: 0 20px;
@@ -21,12 +25,16 @@
     grid-template-columns: 40% 1fr 1fr;
     align-items: center;
     width: calc(100% - 60px);
+    padding: 0 30px;
     max-width: 1220px;
-    min-height: 146px;
+    min-height: 150px;
+    background-color: @special_smoke-grey;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
+    width: calc(100% - 60px);
+    padding: 0 110px;
+    grid-template-columns: 44% 1fr 1fr;
   }
 }
 
@@ -35,8 +43,17 @@
   padding: 38px 0 31px 0;
   border-bottom: 1px solid @special_gainsboro;
 
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: @tablet-width) {
-    padding: 18px 0 24px 0;
+    padding: 24px 0 24px 0;
     border-bottom: none;
   }
 
@@ -51,11 +68,11 @@
 
 .page-footer__social {
   margin: 0;
-  padding: 19px 58px 16px;
+  padding: 19px 60px 16px 58px;
   border-bottom: 1px solid @special_gainsboro;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 26px;
+    padding: 6px 0 5px 0;
     border-bottom: none;
   }
 }
@@ -64,8 +81,17 @@
   margin: 0;
   padding: 21px 0 28px 0;
 
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: @tablet-width) {
-    padding-right: 5px;
+    padding: 3px 0 0;
     border-bottom: none;
   }
 
