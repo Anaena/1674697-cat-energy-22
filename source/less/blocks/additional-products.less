@@ -1,10 +1,23 @@
 .additional-products__wrapper {
-  width: 280px;
+  width: calc(100% - 40px);
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+
+  @media (min-width: @tablet-width) {
+    width: calc(100% - 60px);
+  }
+
+  @media (min-width: @desktop-width) {
+    width: calc(100% - 220px);
+    margin-bottom: 56px;
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .additional-products__title {
@@ -13,16 +26,38 @@
   font-size: 24px;
   line-height: 24px;
   color: @basic_black;
+
+  @media (min-width: @tablet-width) {
+    margin: 15px 0 35px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
 }
 
 .additional-products__list {
   margin: 0;
   padding: 10px 0 0 0;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    width: calc(100% - 2px);
+    margin-top: 45px;
+    margin-bottom: 30px;
+    border: 1px solid @special_light-grey;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: calc(100% - 326px);
+    padding-top: 0;
+  }
 }
 
 .additional-products__gift {
-  width: 280px;
+  width: 100%;
   height: 289px;
   margin: 38px 0 34px;
   padding: 0;
@@ -33,11 +68,32 @@
   background-image: url("../../img/catalog/gift-photo-mobile.png");
   background-position: 0 0;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    height: 200px;
+    margin-bottom: 76px;
+    flex-direction: row;
+    justify-content: space-around;
+    background-position: center 66%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: calc(100% - 975px);
+    height: 289px;
+    margin: 45px 0 30px;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 
 .additional-products__icon {
   margin-bottom: 38px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 35px;
+    margin-bottom: 0;
+  }
 }
 
 .additional-products__slogan {
@@ -49,4 +105,15 @@
   line-height: 20px;
   text-align: center;
   color: @basic_white;
+
+  @media (min-width: @tablet-width) {
+    width: 26%;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 67%;
+    margin-bottom: 21px;
+    text-align: center;
+  }
 }
