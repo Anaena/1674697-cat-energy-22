@@ -36,10 +36,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 94%;
     grid-column-start: 1;
     grid-column-end: 2;
-    padding: 28px 0 5px 0;
+    width: 79%;
+    padding: 27px 0 0 0;
+    margin: 0 0 20px 110px;
   }
 }
 
@@ -52,10 +53,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 93%;
-    height: 200px;
+    width: 79%;
+    height: 198px;
     padding: 0;
-    margin: 0;
+    margin: 0 110px 40px 0;
     flex-direction: column;
     grid-column-start: 2;
     grid-column-end: -1;
@@ -65,18 +66,45 @@
   }
 }
 
+.form__fieldset--line {
+  position: relative;
+  border-top: 2px solid @basic_green;
+  margin: 44px 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+    margin: 54px 0 15px;
+  }
+}
+
+.form__fieldset--line:nth-last-of-type(2) {
+  margin-top: 9px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 26px;
+  }
+}
+
+.form__fieldset--line:last-of-type {
+  margin: 19px 0 0;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 56px;
+  }
+}
+
 .form__wrapper {
   min-width: 280px;
-  margin: 0;
+  margin: 44px 0 0;
   padding: 0 20px;
   display: flex;
   flex-direction: column;
 
   @media (min-width: @tablet-width) {
-    width: calc(100% - 138px);
+    width: calc(100% - 75px);
     max-width: 1220px;
-    margin-bottom: 35px;
-    padding: 20px 68px 0 71px;
+    margin: 54px 0 35px;
+    padding: 16px 350px 0 40px;
   }
 
   @media (min-width: @desktop-width) {
@@ -100,10 +128,13 @@
 .form__wrapper--comment {
   @media (min-width: @tablet-width) {
     margin-bottom: 13px;
+    padding-top: 30px;
   }
 }
 
 .form__wrapper--personal {
+  margin-top: 67px;
+
   @media (min-width: @desktop-width) {
     margin-top: 20px;
   }
@@ -289,6 +320,7 @@
 
   @media (min-width: @tablet-width) {
     height: 174px;
+    padding-left: 17px;
   }
 }
 
@@ -372,103 +404,52 @@
 }
 
 .form__subtitle {
-  position: relative;
-  margin-left: 10px;
-  padding: 26px 0 35px;
+  position: absolute;
+  margin: 0;
+  padding: 0 20px;
   .font(@Oswald; normal; 400);
   font-size: 24px;
   line-height: 26px;
   color: @basic_black;
-  overflow: hidden;
-
-  @media (max-width: @mobile-width-only) {
-    max-width: 77%;
-  }
+  top: -0.8em;
+  background: @basic_white;
 
   @media (min-width: @tablet-width) {
+    width: 27%;
+    padding: 0 11px 0 39px;
     font-size: 36px;
     line-height: 36px;
-    margin-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 40px;
+    width: 27%;
   }
 }
 
-.form__subtitle::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background: @basic_green;
-  top: calc(15px + 0.5em);
-  right: 0;
-  z-index: -1;
-  border: solid @basic_white;
-  border-width: 0 20px;
-}
+.form__subtitle--personal {
+  width: 59%;
+  padding-right: 11px;
 
-.form__subtitle::before {
   @media (min-width: @tablet-width) {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background: @basic_green;
-    top: calc(15px + 0.5em);
-    right: 0;
-    z-index: -1;
+    width: 71%;
   }
-}
-// .form__subtitle::after {
-//   content: "";
-//   display: inline-block;
-//   vertical-align: middle;
-//   box-sizing: border-box;
-//   width: 100%;
-//   height: 2px;
-//   margin-right: -100%;
-//   background: @basic_green;
-//   border: solid @basic_white;
-//   border-width: 0 20px;
 
-//   @media (min-width: @tablet-width) {
-//     width: 90%;
-//   }
-// }
-
-// .form__subtitle::before {
-//   @media (min-width: @tablet-width) {
-//     content: "";
-//     justify-self: flex-start;
-//     align-self: center;
-//     box-sizing: border-box;
-//     width: 10%;
-//     height: 2px;
-//     margin-right: 100%;
-//     background: @basic_green;
-//     border: solid @basic_white;
-//     border-width: 0 20px;
-//   }
-// }
-
-.form__subtitle--personal,
-.form__subtitle--padding {
-  @media (min-width: @tablet-width) {
-    margin-bottom: 22px;
+  @media (min-width: @desktop-width) {
+    margin-bottom: 7px;
+    width: 71%;
   }
 }
 
-.form__subtitle--padding {
-  padding-top: 13px;
-
+.form__subtitle--comment {
   @media (min-width: @desktop-width) {
     padding-bottom: 20px;
   }
 }
 
-.form__subtitle--personal {
-  @media (min-width: @desktop-width) {
-    margin-bottom: 7px;
+.form__subtitle--checkbox {
+  @media (min-width: @tablet-width) {
+    width: 31%;
   }
 }
 
