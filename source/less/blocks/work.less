@@ -57,6 +57,7 @@
     grid-template-rows: 280px 280px;
     column-gap: 59px;
     row-gap: 38px;
+    counter-reset: section;
   }
 
   @media (min-width: @desktop-width) {
@@ -128,6 +129,7 @@
 
 .work__item::after {
   @media (min-width: @tablet-width) {
+    content: counters(section, ".");
     position: absolute;
     width: 134px;
     height: 280px;
@@ -137,36 +139,11 @@
     color: @special_smoke-grey;
     top: 5px;
     right: 78px;
+    counter-increment: section;
   }
 
   @media (min-width: @desktop-width) {
     left: 116px;
-  }
-}
-
-.work__item--useful::after {
-  @media (min-width: @tablet-width) {
-    content: "1";
-    top: 6px;
-    right: 72px;
-  }
-}
-
-.work__item--water::after {
-  @media (min-width: @tablet-width) {
-    content: "2";
-  }
-}
-
-.work__item--nutritious::after {
-  @media (min-width: @tablet-width) {
-    content: "3";
-  }
-}
-
-.work__item--result::after {
-  @media (min-width: @tablet-width) {
-    content: "4";
   }
 }
 
@@ -188,11 +165,5 @@
 
   @media (min-width: @desktop-width) {
     width: 98%;
-  }
-}
-
-.work__item--br {
-  @media (max-width: @mobile-width-only) {
-    display: none;
   }
 }
