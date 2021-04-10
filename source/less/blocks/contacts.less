@@ -6,10 +6,14 @@
 
 .contacts--theme {
   background: @special_smoke-grey;
+
+  @media (min-width: @tablet-width) {
+    background: @basic_white;
+  }
 }
 
 .contacts__wrapper {
-  width: calc(100% - 40px);
+  width: 77%;
   min-width: 280px;
   margin: 0 auto;
   padding: 20px 20px;
@@ -21,6 +25,7 @@
     justify-content: space-between;
     width: calc(100% - 60px);
     max-width: 1220px;
+    padding: 17px 0;
     margin-bottom: 30px;
     border-bottom: none;
   }
@@ -105,7 +110,7 @@
 }
 
 .contacts__map {
-  width: 100%;
+  width: 88%;
   min-width: 320px;
   height: 362px;
   margin: 0 auto;
@@ -114,6 +119,7 @@
   overflow: hidden;
 
   @media (min-width: @tablet-width) {
+    width: 100%;
     max-width: 1220px;
     height: 400px;
   }

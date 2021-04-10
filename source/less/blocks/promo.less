@@ -27,12 +27,11 @@
   @media (min-width: @desktop-width) {
     margin-top: -160px;
     background-image:
-      url("../../img/index/promo_box.png"),
-      url("../../img/index/background_green.png"),
-      url("../../img/index/promo_cat.png");
-    background-position: 65% 45%, 115% -82px, 115% -82px;
+      url("../../img/index/promo_box-desktop.png"),
+      url("../../img/index/background_green-desktop.png"),
+      url("../../img/index/promo-cat-desktop.png");
+    background-position: 63% 51%, 99% 0, 99% 0;
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: 552px 449px, contain, contain;
   }
 }
 
@@ -69,7 +68,7 @@
 
   @media (min-width: @tablet-width) {
     width: 80%;
-    margin: 41px 0 40px 5px;
+    margin: 41px 0 40px 0;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
@@ -95,7 +94,7 @@
   color: @basic_white;
 
   @media (min-width: @tablet-width) {
-    margin: 0 0 50px 6px;
+    margin: 0 0 50px 0;
     font-size: 20px;
     line-height: 20px;
     color: @basic_black;
@@ -110,9 +109,10 @@
 }
 
 .promo__button {
-  width: calc(100% - 88px);
+  width: 68%;
   text-align: center;
   justify-self: flex-end;
+  align-self: center;
   .font(@Oswald; normal; 400);
   font-size: 14px;
   line-height: 18px;
@@ -121,14 +121,16 @@
   color: @basic_white;
 
   @media (min-width: @tablet-width) {
-    width: 244px;
+    width: 192px;
     padding: 17px 26px;
     font-size: 20px;
     line-height: 20px;
+    align-self: flex-start;
+    margin-left: -5px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 244px;
+    width: 200px;
     align-self: center;
     margin: 20px 0 10px 80px;
     padding: 17px 21px;
