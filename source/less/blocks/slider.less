@@ -102,7 +102,6 @@
 }
 
 .slider__span {
-  position: relative;
   margin: 0 12px 0 16px;
   line-height: 20px;
   text-align: center;
@@ -113,11 +112,17 @@
     margin: 0 18px 0 16px;
     font-size: 20px;
     line-height: 30px;
-    border-bottom: 1px dotted rgba(255, 255, 255, 0.24);
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.24);
   }
 
   @media (min-width: @desktop-width) {
     margin: 0 21px 0 15px;
+  }
+}
+
+.slider__span--active {
+  @media (min-width: @tablet-width) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
   }
 }
 
