@@ -4,13 +4,13 @@
   width: 100%;
 
   @media (min-width: @tablet-width) {
-    width: calc(100% - 269px);
+    width: 62%;
     max-width: 1220px;
     display: flex;
   }
 
   @media (min-width: @desktop-width) {
-    width: calc(100% - 742px);
+    width: 50%;
   }
 }
 
@@ -138,11 +138,25 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  @media (min-width: @desktop-width) {
+    justify-content: flex-end;
+  }
 }
 
 .main-nav__item {
   @media (min-width: @tablet-width) {
     width: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 35px;
+  }
+}
+
+.main-nav__item:first-of-type {
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
   }
 }
 
