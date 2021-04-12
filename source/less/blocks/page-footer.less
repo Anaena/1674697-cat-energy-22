@@ -1,9 +1,6 @@
 .page-footer {
   min-height: 236px;
-
-  &--theme {
-    background: @special_smoke-grey;
-  }
+  background: @special_smoke-grey;
 
   @media (min-width: @tablet-width) {
     min-height: 150px;
@@ -21,14 +18,13 @@
   justify-content: space-between;
 
   @media (min-width: @tablet-width) {
+    width: calc(100% - 60px);
+    max-width: 1220px;
+    min-height: 150px;
+    padding: 0 30px;
     display: grid;
     grid-template-columns: 40% 1fr 1fr;
     align-items: center;
-    width: calc(100% - 60px);
-    padding: 0 30px;
-    max-width: 1220px;
-    min-height: 150px;
-    background-color: @special_smoke-grey;
   }
 
   @media (min-width: @desktop-width) {
