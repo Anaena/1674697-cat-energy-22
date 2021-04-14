@@ -11,4 +11,15 @@
 .logo__image-icon {
   width: 33px;
   margin-right: 57px;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 174px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
+  }
 }
