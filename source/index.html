@@ -5,7 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="icon" href="img/favicon/favicon.ico">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/icon180.png">
+  <link rel="manifest" href="img/favicon/manifest.webmanifest">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -14,7 +17,9 @@
     <div class="page-header__wrapper">
       <a class="page-header__logo logo">
         <picture>
-          <img class="logo__image-icon" src="img/logo_mobile.svg" width="33" height="38" alt="Логотип «Кэт энерджи»">
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="logo__image-icon" src="img/logo-mobile.svg" width="33" alt="Логотип «Кэт энерджи»">
         </picture>
         <img class="logo__image-text" src="img/logo.svg" width="101" height="18" alt="Cat energy">
       </a>
@@ -100,20 +105,22 @@
               <p class="example__col example__col--label">затрачено времени</p>
             </div>
           </div>
-          <p class="example__food-costs">Затраты на питание: <span class="example__cost">15 000 руб.</span></p>
+          <p class="example__food-costs">Затраты на питание: <span class="example__cost">15&nbsp;000&nbsp;руб.</span></p>
         </div>
       </div>
       <div class="example__slider slider">
         <div class="slider__list">
           <div class="slider__item  slider__item--before">
             <picture>
-              <img class="slider__img" src="img/index/before_mobile.png" width="311" height="232"
-                alt="Бодипозитивный котик">
+              <source media="(min-width: 768px)" srcset="img/index/before-tablet.png 1x, img/index/before-tablet@2x.png 2x">
+              <img class="slider__img" src="img/index/before-mobile.png" width="311" height="232"
+                srcset="img/index/before-mobile@2x.png 2x" alt="Бодипозитивный котик">
             </picture>
           </div>
           <div class="slider__item  slider__item--after">
             <picture>
-              <img class="slider__img" src="img/index/after_mobile.png" width="251" height="240" alt="Худой котик">
+              <source media="(min-width: 768px)" srcset="img/index/after-tablet.png 1x, img/index/after-tablet@2x.png 2x">
+              <img class="slider__img" src="img/index/after-mobile.png" width="251" height="240" srcset="img/index/after-mobile@2x.png 2x" alt="Худой котик">
             </picture>
           </div>
         </div>
@@ -132,6 +139,11 @@
         </address>
       </div>
       <div class="contacts__map map">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
+          <img class="map__img" src="img/map-mobile.png" width="320" height="362" srcset="img/map-mobile@2x.png 2x" alt="Котик">
+        </picture>
         <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/-/CCUUj8CHDC" width="560" height="400"
           allowfullscreen="" loading="lazy"></iframe>
       </div>
@@ -178,6 +190,7 @@
     </div>
   </footer>
   <script src="js/script.js"></script>
+  <script src="js/slider.js"></script>
 </body>
 
 </html>
