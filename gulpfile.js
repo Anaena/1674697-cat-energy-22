@@ -12,7 +12,7 @@ const styles = () => {
   return gulp.src("source/less/style.less")
     .pipe(plumber())
     .pipe(sourcemap.init())
-    .pipe(less())
+    .pipe(less({ javascriptEnabled: true }))
     .pipe(postcss([
       autoprefixer()
     ]))
