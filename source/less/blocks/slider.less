@@ -22,7 +22,7 @@
 
   @media (min-width: @desktop-width) {
     width: 98%;
-    margin: -185px auto 36px;
+    margin: -185px 0 27px;
   }
 }
 
@@ -33,6 +33,10 @@
     height: 520px;
     overflow: hidden;
     z-index: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 664px;
   }
 }
 
@@ -48,9 +52,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 55%;
+    width: 57%;
+    bottom: -124px;
+    margin-bottom: 0;
     background-color: @special_smoke-grey;
-    background-image: linear-gradient(to bottom, @basic_white 185px, @special_smoke-grey 137px);
+    background-image: linear-gradient(to bottom, @basic_white 205px, @special_smoke-grey 137px);
   }
 }
 
@@ -61,15 +67,17 @@
   @media (min-width: @tablet-width) {
     display: block;
     width: 100%;
-    right: -44px;
+    right: -57px;
     z-index: 2;
     background-color: @special_smoke-white;
     background-image: linear-gradient(to bottom, @basic_white 182px, @special_smoke-white 183px);
   }
 
   @media (min-width: @desktop-width) {
-    background-image: linear-gradient(to bottom, @basic_white 185px, @special_smoke-white 137px);
-    left: 0;
+    background-image: linear-gradient(to bottom, @basic_white 205px, @special_smoke-white 137px);
+    left: 55px;
+    bottom: -124px;
+    width: 545px;
   }
 }
 
@@ -86,18 +94,29 @@
   }
 }
 
+.slider__img--after {
+  @media (min-width: @tablet-width) {
+    margin: 10px auto;
+    width: 540px;
+    height: 520px;
+    background-size: 690px 517px;
+  }
+}
+
 .slider__range {
   text-align: center;
+  z-index: 10;
 
   @media (min-width: @tablet-width) {
     width: 80%;
     max-width: 1220px;
     margin: 0 auto;
+    padding-top: 6px;
   }
 
   @media (min-width: @desktop-width) {
     width: 100%;
-    padding: 0 43px;
+    padding: 0 38px;
   }
 }
 
@@ -112,11 +131,12 @@
     margin: 0 18px 0 16px;
     font-size: 20px;
     line-height: 30px;
+    vertical-align: middle;
     border-bottom: 1px dotted rgba(0, 0, 0, 0.24);
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 21px 0 15px;
+    margin: 0 23px 0 18px;
   }
 }
 
@@ -145,6 +165,7 @@
     margin: 0 6px;
     cursor: pointer;
     background: @basic_green;
+    background-position: 0 50%;
     border-radius: 6px;
     border: none;
 
@@ -154,7 +175,7 @@
     }
 
     @media (min-width: @desktop-width) {
-      width: 64%;
+      width: 65%;
     }
   }
 
