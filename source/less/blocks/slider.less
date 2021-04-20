@@ -14,7 +14,7 @@
   margin-bottom: 17px;
 
   @media (min-width: @tablet-width) {
-    width: calc(100% - 85px);
+    width: 683px;
     height: 520px;
     position: relative;
     margin: -183px auto 18px;
@@ -104,7 +104,9 @@
 }
 
 .slider__range {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 10;
 
   @media (min-width: @tablet-width) {
@@ -121,22 +123,21 @@
 }
 
 .slider__span {
-  margin: 0 12px 0 16px;
+  margin: 0 15px 0 18px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   color: @basic_black;
 
   @media (min-width: @tablet-width) {
-    margin: 0 18px 0 16px;
+    margin: 0 22px 0 20px;
     font-size: 20px;
     line-height: 30px;
-    vertical-align: middle;
     border-bottom: 1px dotted rgba(0, 0, 0, 0.24);
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 23px 0 18px;
+    margin: 0 27px 0 22px;
   }
 }
 
@@ -147,7 +148,7 @@
 }
 
 .slider__input-range {
-  flex-grow: 1;
+  flex-grow: 0;
   width: 84px;
   height: 14px;
   margin: 0;
@@ -164,8 +165,7 @@
     height: 6px;
     margin: 0 6px;
     cursor: pointer;
-    background: @basic_green;
-    background-position: 0 50%;
+    background: @basic_white;
     border-radius: 6px;
     border: none;
 
@@ -184,7 +184,8 @@
     height: 6px;
     margin: 0 6px;
     cursor: pointer;
-    background: @basic_green;
+    background-color: @basic_green;
+    background-position: left center;
     border-radius: 6px;
     border: none;
 
@@ -203,7 +204,8 @@
     height: 6px;
     margin: 0 6px;
     cursor: pointer;
-    background: @basic_green;
+    background-color: @basic_green;
+    background-position: left center;
     border-radius: 6px;
     border: none;
 
