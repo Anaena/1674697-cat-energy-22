@@ -22,7 +22,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 29px;
+    margin-right: 27px;
     margin-bottom: 10px;
   }
 }
@@ -35,7 +35,7 @@
   fill: @special_grey;
 }
 
-.social__path--background {
+.social__icon--fill-none {
   stroke: @special_grey;
   fill: none;
 }
@@ -47,11 +47,12 @@
   fill: @basic_green;
 }
 
-.social__item:hover .social__path--background,
-.social__item:focus .social__path--background,
-.social__path--background:hover,
-.social__path--background:focus {
+.social__item:hover .social__icon--fill-none,
+.social__item:focus .social__icon--fill-none,
+.social__icon--fill-none:hover,
+.social__icon--fill-none:focus {
   stroke: @basic_green;
+  fill: none;
 }
 
 .social__item:active {
