@@ -43,7 +43,7 @@
 .slider__item--before {
   display: block;
   width: 100%;
-  margin-bottom: 26px;
+  margin-bottom: 32px;
 
   @media (min-width: @tablet-width) {
     width: 50%;
@@ -62,12 +62,12 @@
 
 .slider__item--after {
   display: none;
-  margin: 0 32px 0 37px;
+  margin: 0 32px 24px 37px;
 
   @media (min-width: @tablet-width) {
     display: block;
     width: 100%;
-    right: -57px;
+    right: -63px;
     z-index: 2;
     background-color: @special_smoke-white;
     background-image: linear-gradient(to bottom, @basic_white 182px, @special_smoke-white 183px);
@@ -75,14 +75,18 @@
 
   @media (min-width: @desktop-width) {
     background-image: linear-gradient(to bottom, @basic_white 205px, @special_smoke-white 137px);
-    left: 55px;
+    left: 57px;
     bottom: -124px;
     width: 545px;
+    margin-bottom: 0;
   }
 }
 
 .slider__img {
   max-width: 100%;
+  display: flex;
+  margin: 0 auto;
+  padding-right: 10px;
 
   @media (min-width: @tablet-width) {
     display: block;

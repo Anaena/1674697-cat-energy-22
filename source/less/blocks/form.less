@@ -77,7 +77,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
   }
 }
 
@@ -93,7 +93,7 @@
   margin: 19px 0 0;
 
   @media (min-width: @tablet-width) {
-    margin-top: 56px;
+    margin-top: 60px;
   }
 }
 
@@ -201,6 +201,7 @@
 .form__label--radio {
   margin: 0 0 15px 45px;
   position: relative;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     margin: 0 0 13px 43px;
@@ -220,6 +221,7 @@
 .form__label--checkbox {
   margin: 0 0 25px 45px;
   position: relative;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     width: 36%;
@@ -228,6 +230,7 @@
 
   @media (min-width: @desktop-width) {
     width: 15%;
+    margin-left: 56px;
   }
 }
 
@@ -312,12 +315,13 @@
 
 .form__item--error {
   border: 2px solid @status_error;
+  outline: 2px solid @status_error;
 
-  & .form__icon--email {
+  & + .form__icon--email {
     stroke: @status_error;
   }
 
-  & .form__icon--phone {
+  & + .form__icon--phone {
     fill: @status_error;
   }
 }
@@ -439,8 +443,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    left: -47px;
-    top: 5px;
+    left: -48px;
+    top: 4px;
   }
 }
 
@@ -567,7 +571,7 @@
 
   @media (min-width: @desktop-width) {
     width: 79%;
-    margin: 8px 20px 31px 110px;
+    margin: 8px 20px 28px 110px;
   }
 }
 

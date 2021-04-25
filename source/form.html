@@ -10,6 +10,9 @@
   <link rel="apple-touch-icon" href="img/favicon/icon180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="js/script.min.js" as="script">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 <body class="page__body">
@@ -115,7 +118,7 @@
       </div>
       <div class="contacts__map map">
         <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/-/CCUUj8CHDC" width="560" height="400"
-          allowfullscreen="" loading="lazy"></iframe>
+          allowfullscreen="" loading="lazy" title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
       </div>
     </section>
   </main>
@@ -158,7 +161,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
