@@ -10,6 +10,9 @@
   <link rel="apple-touch-icon" href="img/favicon/icon180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="js/script.min.js" as="script">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 <body class="page__body">
@@ -72,7 +75,7 @@
                 <dd class="card__definition">700 Р.</dd>
               </dl>
             </div>
-            <button class="card__order button">заказать</button>
+            <button class="card__order button" aria-label="Заказать Cat Energy 500 г с курцей">заказать</button>
           </li>
           <li class="products__item  card">
             <div class="card__block-img">
@@ -104,7 +107,7 @@
                 <dd class="card__definition">1000 Р.</dd>
               </dl>
             </div>
-            <button class="card__order button">заказать</button>
+            <button class="card__order button" aria-label="Заказать Cat Energy 1000 г с курцей">заказать</button>
           </li>
           <li class="products__item card">
             <div class="card__block-img card__block-img--small">
@@ -131,7 +134,7 @@
                 <dd class="card__definition">700 Р.</dd>
               </dl>
             </div>
-            <button class="card__order button">заказать</button>
+            <button class="card__order button" aria-label="Заказать Cat Energy 500 г с рыбой">заказать</button>
           </li>
           <li class="products__item card">
             <div class="card__block-img">
@@ -160,7 +163,7 @@
                 <dd class="card__definition">1000 Р.</dd>
               </dl>
             </div>
-            <button class="card__order button">заказать</button>
+            <button class="card__order button" aria-label="Заказать Cat Energy 1000 г с рыбой">заказать</button>
           </li>
           <li class="products__item card">
             <div class="card__block-img card__block-img--small">
@@ -187,7 +190,7 @@
                 <dd class="card__definition">400 Р.</dd>
               </dl>
             </div>
-            <button class="card__order button">заказать</button>
+            <button class="card__order button" aria-label="Заказать Cat Energy 500 г с гречкой">заказать</button>
           </li>
           <li class="products__item card">
             <div class="card__block-img">
@@ -216,7 +219,7 @@
                 <dd class="card__definition">700 Р.</dd>
               </dl>
             </div>
-            <button class="card__order button">заказать</button>
+            <button class="card__order button" aria-label="Заказать Cat Energy 1000 г с гречкой">заказать</button>
           </li>
           <li class="products__item card">
             <div class="card__block-img card__block-img--small">
@@ -243,14 +246,14 @@
                 <dd class="card__definition">500 Р.</dd>
               </dl>
             </div>
-            <button class="card__order button">заказать</button>
+            <button class="card__order button" aria-label="Заказать Cat Energy 500 г с рисом">заказать</button>
           </li>
           <li class="products__item products__item--more card">
             <a class="card__link card__link--more" href="#">
               <h3 class="card__title card__title--more">Показать еще 100500 товаров</h3>
             </a>
             <p class="card__more">На самом деле вкусов гораздо больше!</p>
-            <button class="card__button button button--monochrome">показать все</button>
+            <button class="card__button button button--monochrome" aria-label="Показать все товары">показать все</button>
           </li>
         </ul>
       </div>
@@ -265,7 +268,7 @@
               <dt class="small-card__feature">1 упаковка (100 г)</dt>
               <dd class="small-card__cost">200 Р.</dd>
             </dl>
-            <button class="small-card__order button">заказать</button>
+            <button class="small-card__order button" aria-label="Заказать сахарозаменитель">заказать</button>
           </li>
           <li class="additional-products__item small-card">
             <h3 class="small-card__title">питьевая вода</h3>
@@ -273,7 +276,7 @@
               <dt class="small-card__feature small-card__feature--more-space">5 литров</dt>
               <dd class="small-card__cost">50 Р.</dd>
             </dl>
-            <button class="small-card__order button">заказать</button>
+            <button class="small-card__order button" aria-label="Заказать питьевую воду">заказать</button>
           </li>
           <li class="additional-products__item small-card">
             <h3 class="small-card__title">молоко</h3>
@@ -281,7 +284,7 @@
               <dt class="small-card__feature">1 литр</dt>
               <dd class="small-card__cost">100 Р.</dd>
             </dl>
-            <button class="small-card__order button">заказать</button>
+            <button class="small-card__order button" aria-label="Заказать молоко">заказать</button>
           </li>
           <li class="additional-products__item small-card">
             <h3 class="small-card__title">витамины</h3>
@@ -289,11 +292,11 @@
               <dt class="small-card__feature">1 упаковка (30 г)</dt>
               <dd class="small-card__cost">300 Р.</dd>
             </dl>
-            <button class="small-card__order button">заказать</button>
+            <button class="small-card__order button" aria-label="Заказать витамины">заказать</button>
           </li>
         </ul>
         <div class="additional-products__gift">
-          <svg class="additional-products__icon" width="78" height="80" fill="none">
+          <svg class="additional-products__icon" width="78" height="80" fill="none" aria-hidden="true" focusable="false">
             <use xlink:href="img/sprite.svg#gift"></use>
           </svg>
           <p class="additional-products__slogan">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
@@ -308,7 +311,7 @@
         </address>
       </div>
       <div class="contacts__map map">
-        <iframe class="map__iframe" width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy"
+        <iframe class="map__iframe" width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy" title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858716006118!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1616755633399!5m2!1sru!2sru"></iframe>
       </div>
     </section>
@@ -352,7 +355,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
