@@ -20,22 +20,28 @@
 // Form
 
 (function () {
-  const programForm = document.querySelector('.program-form');
-  const contactForm = programForm.querySelector('.form');
-  const petName = programForm.querySelector('.form__item--name');
-  const petWeight = programForm.querySelector('.form__item--weight');
-  const userEmail = programForm.querySelector('.form__item--email');
-  const userPhone = programForm.querySelector('.form__item--phone');
+  const contactForm = document.querySelector('.form');
+  const buttonForm = document.querySelector('.form__button');
+  const fields = contactForm.querySelectorAll('input[required]');
 
-  const inputForm = [petName, petWeight, userEmail, userPhone];
+  fields.forEach(field => {
+    field.addEventListener('focus', () => {
+      field.classList.remove('form__item--error');
+    });
+  });
 
-  contactForm.addEventListener('submit', function (evt) {
-    if (!inputForm.value) {
+  buttonForm.addEventListener('click', function (evt) {
+    let isValid = true;
+
+    fields.forEach(field => {
+      if (!field.value) {
+        isValid = false;
+        field.classList.add('form__item--error');
+      }
+    });
+
+    if (!isValid) {
       evt.preventDefault();
-      inputForm.classList.add('form__item--error');
-      console.log('ошибка');
-      // inputForm.offsetWidth = inputForm.offsetWidth;
-      // inputForm.classList.add('form__item--error');
     }
   });
 }());

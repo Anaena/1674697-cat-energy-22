@@ -48,13 +48,13 @@
   @media (min-width: @tablet-width) {
     width: calc(100% - 234px);
     margin: 0 auto 52px;
-    padding: 30px 47px 13px 47px;
+    padding: 33px 47px 13px 47px;
     border: 1px solid @special_gainsboro;
   }
 
   @media (min-width: @desktop-width) {
     width: 79%;
-    height: 198px;
+    min-height: 198px;
     padding: 0;
     margin: 29px 110px 35px 0;
     flex-direction: column;
@@ -62,7 +62,6 @@
     grid-column-end: -1;
     justify-content: center;
     justify-self: self-end;
-    align-self: center;
   }
 }
 
@@ -73,7 +72,7 @@
 
   @media (min-width: @tablet-width) {
     padding: 0 30px;
-    margin: 54px 0 15px;
+    margin: 50px 0 15px;
   }
 
   @media (min-width: @desktop-width) {
@@ -82,10 +81,14 @@
 }
 
 .form__fieldset--line:nth-last-of-type(2) {
-  margin-top: 9px;
+  margin-top: 5px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 26px;
+    margin-top: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 24px;
   }
 }
 
@@ -93,7 +96,11 @@
   margin: 19px 0 0;
 
   @media (min-width: @tablet-width) {
-    margin-top: 60px;
+    margin-top: 53px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 58px;
   }
 }
 
@@ -107,7 +114,7 @@
   @media (min-width: @tablet-width) {
     width: calc(100% - 75px);
     max-width: 1220px;
-    margin: 54px 0 35px;
+    margin: 55px 0 35px;
     padding: 16px 35px 0 40px;
   }
 
@@ -133,12 +140,12 @@
 .form__wrapper--comment {
   @media (min-width: @tablet-width) {
     margin-bottom: 13px;
-    padding-top: 30px;
+    padding-top: 35px;
   }
 }
 
 .form__wrapper--personal {
-  margin-top: 67px;
+  margin-top: 70px;
 
   @media (min-width: @desktop-width) {
     margin-top: 54px;
@@ -175,10 +182,6 @@
     margin-bottom: 13px;
   }
 
-  &--pet {
-    padding-bottom: 15px;
-  }
-
   &--checkbox:first-of-type {
     margin-top: 2px;
   }
@@ -186,6 +189,14 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.form__label--pet {
+  padding-bottom: 15px;
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 24px;
   }
 }
 
@@ -315,7 +326,6 @@
 
 .form__item--error {
   border: 2px solid @status_error;
-  outline: 2px solid @status_error;
 
   & + .form__icon--email {
     stroke: @status_error;
@@ -343,7 +353,8 @@
   width: calc(100% - 77px);
 
   @media (min-width: @tablet-width) {
-    width: calc(100% - 102px);
+    width: calc(100% - 98px);
+    margin-left: 10px;
   }
 
   @media (min-width: @desktop-width) {
@@ -413,8 +424,8 @@
   border-radius: 50%;
 
   @media (min-width: @tablet-width) {
-    left: -61px;
-    top: -5px;
+    left: -62px;
+    top: -7px;
     width: 40px;
     height: 40px;
   }
@@ -436,8 +447,8 @@
   border-radius: 50%;
 
   @media (min-width: @tablet-width) {
-    left: -49px;
-    top: 7px;
+    left: -50px;
+    top: 5px;
     width: 18px;
     height: 18px;
   }
@@ -513,7 +524,7 @@
 
   @media (min-width: @tablet-width) {
     width: 27%;
-    padding: 0 11px 0 39px;
+    padding: 5px 11px 0 39px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -530,6 +541,7 @@
 
   @media (min-width: @tablet-width) {
     width: 71%;
+    padding-top: 3px;
   }
 
   @media (min-width: @desktop-width) {
