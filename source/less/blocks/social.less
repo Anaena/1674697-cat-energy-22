@@ -1,34 +1,35 @@
 .social {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   list-style: none;
 
   @media (min-width: @tablet-width) {
-    width: 60%;
-    justify-content: space-between;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 41%;
-    justify-content: flex-start;
+    width: 100%;
+    justify-content: center;
   }
 }
 
 .social__item {
+  margin-right: 34px;
+
   @media (min-width: @tablet-width) {
     margin-right: 25px;
     margin-bottom: 5px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 27px;
+    margin-right: 25px;
     margin-bottom: 10px;
   }
 }
 
 .social__item:last-of-type {
   margin-right: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 10px;
+  }
 }
 
 .social__icon {
@@ -84,7 +85,6 @@
   height: 22px;
 
   @media (min-width: @tablet-width) {
-    width: 28px;
-    height: 33px;
+    height: 29px;
   }
 }

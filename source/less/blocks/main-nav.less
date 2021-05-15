@@ -4,7 +4,7 @@
   width: 100%;
 
   @media (min-width: @tablet-width) {
-    width: 62%;
+    width: 70%;
     max-width: 1220px;
     display: flex;
   }
@@ -137,21 +137,27 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  @media (min-width: @desktop-width) {
     justify-content: flex-end;
   }
 }
 
 .main-nav__item {
   @media (min-width: @tablet-width) {
-    width: auto;
+    margin-left: 33px;
   }
 
   @media (min-width: @desktop-width) {
     margin-left: 35px;
+  }
+}
+
+.main-nav__item:last-of-type {
+  @media (min-width: @tablet-width) {
+    margin-left: 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 34px;
   }
 }
 
