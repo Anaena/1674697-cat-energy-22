@@ -151,6 +151,7 @@
   @media (min-width: @desktop-width) {
     width: calc(100% - 15px);
     line-height: 21px;
+    margin-left: 10px;
   }
 }
 
@@ -164,8 +165,15 @@
 
   @media (min-width: @desktop-width) {
     width: calc(100% - 70px);
+    margin: 0 auto;
     font-size: 20px;
     line-height: 22px;
+  }
+}
+
+.card__weight {
+  @media (min-width: @tablet-width) {
+    margin-left: 5px;
   }
 }
 
@@ -178,12 +186,13 @@
   line-height: 16px;
 
   @media (min-width: @tablet-width) {
-    margin: 18px 0 5px;
+    margin: 20px 0 5px;
     font-size: 16px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 25px;
+    margin-top: 24px;
+    padding-left: 2px;
   }
 }
 
@@ -196,6 +205,14 @@
     margin-bottom: 7px;
     padding: 0 0 8px;
     border-bottom: 1px solid @special_light-grey;
+  }
+}
+
+.card__definition:first-of-type {
+  padding-right: 3px;
+
+  @media (min-width: @desktop-width) {
+    padding-right: 0;
   }
 }
 
@@ -261,7 +278,7 @@
   padding: 10px 44px;
 
   @media (min-width: @tablet-width) {
-    width: calc(100% - 76px);
+    width: calc(100% - 70px);
     margin-bottom: 13px;
     font-size: 16px;
   }
