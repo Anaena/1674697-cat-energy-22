@@ -1,5 +1,6 @@
 .promo {
   min-height: 502px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     height: 850px;
@@ -13,10 +14,9 @@
 .promo--green-theme {
   background-image:
     url("../../img/index/promo_box-mobile.png"),
-    url("../../img/index/background_green.png"),
-    url("../../img/index/promo_cat.png");
-  background-position: 50% 72%, top center, top center;
-  background-repeat: no-repeat, no-repeat, no-repeat;
+    url("../../img/index/background_green.png");
+  background-position: 50% 72%, top center;
+  background-repeat: no-repeat, no-repeat;
 
   @media (min-width: @tablet-width) {
     background-image: url("../../img/index/promo_box-tablet.jpg");
@@ -28,18 +28,16 @@
     margin-top: -160px;
     background-image:
       url("../../img/index/promo_box-desktop.png"),
-      url("../../img/index/background_green-desktop.png"),
-      url("../../img/index/promo_cat-desktop.png");
-    background-position: 63% 51%, 99% 0, 99% 0;
-    background-repeat: no-repeat, no-repeat, no-repeat;
+      url("../../img/index/background_green-desktop.png");
+    background-position: 63% 51%, 99% 0;
+    background-repeat: no-repeat, no-repeat;
   }
 
   @media (min-resolution: 2dppx) {
     background-image:
       url("../../img/index/promo_box-mobile@2x.png"),
-      url("../../img/index/background_green@2x.png"),
-      url("../../img/index/promo_cat@2x.png");
-    background-size: 280px auto, 320px auto, 320px auto;
+      url("../../img/index/background_green@2x.png");
+    background-size: 280px auto, 320px auto;
 
     @media (min-width: @tablet-width) {
       background-image: url("../../img/index/promo_box-tablet@2x.jpg");
@@ -50,10 +48,9 @@
     @media (min-width: @desktop-width) {
       background-image:
         url("../../img/index/promo_box-desktop@2x.png"),
-        url("../../img/index/background_green-desktop@2x.png"),
-        url("../../img/index/promo_cat-desktop@2x.png");
-      background-position: 63% 51%, 99% 0, 99% 0;
-      background-size: 552px auto, 720px auto, 720px auto;
+        url("../../img/index/background_green-desktop@2x.png");
+      background-position: 63% 51%, 99% 0;
+      background-size: 552px auto, 720px auto;
     }
   }
 }
@@ -161,5 +158,33 @@
     padding: 17px 22px;
     grid-row: 3;
     justify-self: flex-start;
+  }
+}
+
+.promo__green-theme {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.promo__green-cat {
+  display: flex;
+  width: 320px;
+  margin: 0 auto;
+  background-color: @basic_green;
+
+  @media (min-width: @desktop-width) {
+    width: 720px;
+    margin-right: 7px;
   }
 }
