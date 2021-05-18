@@ -143,6 +143,16 @@
   @media (min-width: @desktop-width) {
     margin: 0 22px 0 26px;
   }
+
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  &:active {
+    border-bottom: none;
+    margin-bottom: 1px;
+  }
 }
 
 .slider__span--active {
