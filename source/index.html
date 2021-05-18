@@ -51,7 +51,7 @@
       <div class="promo__wrapper">
         <h2 class="promo__title">Функциональное питание для котов</h2>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
-        <a class="promo__button button" href="form.html">подобрать программу</a>
+        <a class="promo__button button" href="form.html" aria-label="нажми чтобы подобрать программу">подобрать программу</a>
       </div>
       <div class="promo__img-block">
         <picture>
@@ -70,13 +70,13 @@
             <h3 class="programs__title">Похудение</h3>
             <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
               Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="programs__link" href="catalog.html/slim">каталог slim</a>
+            <a class="programs__link" href="catalog.html/slim" aria-label="Открыть страницу с каталогом программы slim">каталог slim</a>
           </li>
           <li class="programs__item programs__item--pro">
             <h3 class="programs__title">Набор массы</h3>
             <p class="programs__description">Заработать авторитет среди дворовых котов и&nbsp;даже собак? Серия Cat
               Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="programs__link" href="catalog.html/pro">каталог pro</a>
+            <a class="programs__link" href="catalog.html/pro" aria-label="Открыть страницу с каталогом программы pro">каталог pro</a>
           </li>
         </ul>
       </div>
@@ -142,9 +142,10 @@
           </div>
         </div>
         <div class="slider__range">
-          <label class="slider__span slider__span--active" for="slider-range">Было</label>
-          <input class="slider__input-range" id="slider-range" type="range" min="0" max="100" value="50" />
-          <label class="slider__span" for="slider-range">Стало</label>
+          <button class="slider__button slider__button--active" aria-label="Нажми и узнаешь, каким котик был">Было</button>
+          <label class="visually-hidden" for="slider-range">Подвигай колесико чтобы увидеть каким котик был и как похудел</label>
+          <input class="slider__input-range" id="slider-range" type="range" min="0" max="100" value="50" tabindex="0" />
+          <button class="slider__button" aria-label="Нажми и узнаешь, каким котик стал">Стало</button>
         </div>
       </div>
     </section>

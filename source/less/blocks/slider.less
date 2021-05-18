@@ -122,30 +122,45 @@
 
   @media (min-width: @desktop-width) {
     width: 100%;
-    padding: 0 38px;
+    padding: 0 38px 0 43px;
   }
 }
 
-.slider__span {
-  margin: 0 15px 0 18px;
+.slider__button {
+  margin: 0 15px 0 20px;
+  padding: 0;
+  .font(@Oswald; normal; 400);
+  font-size: 16px;
   line-height: 20px;
-  text-align: center;
   text-transform: uppercase;
+  text-align: center;
   color: @basic_black;
+  background-color: inherit;
+  border: none;
 
   @media (min-width: @tablet-width) {
-    margin: 0 22px 0 20px;
+    margin: 0 22px 0 21px;
     font-size: 20px;
     line-height: 30px;
     border-bottom: 1px dotted rgba(0, 0, 0, 0.24);
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 22px 0 26px;
+    margin: 0 27px 0 21px;
+  }
+
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  &:active {
+    border-bottom: none;
+    margin-bottom: 1px;
   }
 }
 
-.slider__span--active {
+.slider__button--active {
   @media (min-width: @tablet-width) {
     border-bottom: 1px solid rgba(0, 0, 0, 0.4);
   }
