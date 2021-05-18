@@ -1,4 +1,6 @@
 .promo {
+  width: 100%;
+  max-width: 1440px;
   min-height: 502px;
   position: relative;
 
@@ -11,7 +13,7 @@
   }
 }
 
-.promo--green-theme {
+.promo--theme {
   background-image:
     url("../../img/index/promo_box-mobile.png"),
     url("../../img/index/background_green.png");
@@ -29,7 +31,7 @@
     background-image:
       url("../../img/index/promo_box-desktop.png"),
       url("../../img/index/background_green-desktop.png");
-    background-position: 63% 51%, 99% 0;
+    background-position: 63% 51%, 100% 0;
     background-repeat: no-repeat, no-repeat;
   }
 
@@ -49,7 +51,7 @@
       background-image:
         url("../../img/index/promo_box-desktop@2x.png"),
         url("../../img/index/background_green-desktop@2x.png");
-      background-position: 63% 51%, 99% 0;
+      background-position: 63% 51%, 100% 0;
       background-size: 552px auto, 720px auto;
     }
   }
@@ -100,7 +102,7 @@
   @media (min-width: @desktop-width) {
     width: 70%;
     align-self: flex-end;
-    margin: 25px 0 12px 80px;
+    margin: 25px 0 12px 71px;
   }
 }
 
@@ -125,7 +127,7 @@
   @media (min-width: @desktop-width) {
     width: 70%;
     align-self: center;
-    margin: 24px 0 10px 8px;
+    margin: 24px 0 10px 0;
     grid-row: 2;
   }
 }
@@ -154,14 +156,14 @@
   @media (min-width: @desktop-width) {
     width: 200px;
     align-self: center;
-    margin: 20px 0 10px 80px;
+    margin: 20px 0 10px 72px;
     padding: 17px 22px;
     grid-row: 3;
     justify-self: flex-start;
   }
 }
 
-.promo__green-theme {
+.promo__img-block {
   width: 100%;
   position: absolute;
   top: 0;
@@ -177,7 +179,7 @@
   }
 }
 
-.promo__green-cat {
+.promo__cat-img {
   display: flex;
   width: 320px;
   margin: 0 auto;
@@ -185,6 +187,5 @@
 
   @media (min-width: @desktop-width) {
     width: 720px;
-    margin-right: 7px;
   }
 }
