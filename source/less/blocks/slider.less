@@ -43,12 +43,6 @@
   }
 }
 
-.slider--nojs .slider__item {
-  @media (min-width: @tablet-width) {
-    width: 50%;
-  }
-}
-
 .slider__item {
   position: absolute;
   top: 0;
@@ -58,6 +52,10 @@
   @media (max-width: 767px) {
     display: none;
     position: static;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
   }
 }
 
@@ -167,18 +165,13 @@
   width: 84px;
   padding: 3px 6px;
   box-sizing: border-box;
-  @bg-basic-h: 0deg;
-  @bg-basic-s: 0%;
-  @bg-basic-l: 100%;
-  @bg-basic: hsl(@bg-basic-h, @bg-basic-s, @bg-basic-l / @bg-basic-o);
-  background-color: @bg-basic;
-  @border-color: hsl(@border-color-h, @border-color-s, @border-color-l / @border-color-o);
-  border: 1px solid @border-color;
+  background-color: @basic_white;
+  border: 1px solid @special_grey;
   border-radius: 6px;
 
   @media (min-width: 768px) {
     position: relative;
-    @bg-basic-l: 86%;
+    background-color: @special_grey-range;
     border: none;
     width: 428px;
     height: 6px;
@@ -189,34 +182,33 @@
   touch-action: none;
   width: 35px;
   height: 6px;
-  @bg-basic-h: 97deg;
-  @bg-basic-s: 53%;
-  @bg-basic-l: 47%;
-  @bg-basic: hsl(@bg-basic-h, @bg-basic-s, @bg-basic-l / @bg-basic-o);
-  background-color: @bg-basic;
+  background-color: @basic_green;
   border-radius: 6px;
 
   @media (min-width: 768px) {
     width: 8px;
     height: 8px;
-    @border-color-l: 100%;
-    @border-color: hsl(@border-color-h, @border-color-s, @border-color-l / @border-color-o);
-    border: 13px solid @border-color;
+    border: 13px solid @basic_white;
     border-radius: 50%;
-    box-shadow: 0 0 0 1px hsl(0, 0%, 80%), 0 1px 3px hsla(0, 0%, 0%, 0.16);
+    box-shadow: 0 0 0 1px @special_light-grey;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: grab;
 
-    &:hover {
-      box-shadow: 0 0 0 1px hsl(0, 0%, 80%), 0 2px 4px hsla(0, 0%, 0%, 0.19);
+    &:hover,
+    &:focus {
+      box-shadow:
+        0 0 0 1px @special_light-grey,
+        0 2px 4px rgba(0, 0, 0, 0.19);
     }
 
     &:active {
       cursor: grabbing;
-      box-shadow: 0 0 0 1px hsl(97, 53%, 47%), 0 3px 5px hsla(0, 0%, 0%, 0.2);
+      box-shadow:
+        0 0 0 1px @basic_green,
+        0 3px 5px rgba(0, 0, 0, 0.2);
     }
   }
 }
